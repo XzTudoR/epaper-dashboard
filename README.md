@@ -1,4 +1,4 @@
-# 📅 ESP32 E-Paper Smart Dashboard
+# ESP32 E-Paper Smart Dashboard
 
 Un calendar și dashboard inteligent de birou, optimizat pentru consum ultra-redus de energie, bazat pe un microcontroller **ESP32** și un ecran **E-Paper de 4.2" (400x300)**.
 
@@ -6,25 +6,25 @@ Dashboard-ul agregă automat evenimentele din **Google Calendar**, task-urile di
 
 ---
 
-## ✨ Funcționalități Principale
+## Funcționalități Principale
 
-- **🔋 Consum Ultra-Redus (Deep Sleep)**: Sistemul se trezește la fiecare 3 ore, descarcă datele, reîmprospătează ecranul și intră în hibernare completă (luni de autonomie pe baterie).
-- **🌤️ Vreme Inteligentă (Open-Meteo)**:
+- **Consum Ultra-Redus (Deep Sleep)**: Sistemul se trezește la fiecare 3 ore, descarcă datele, reîmprospătează ecranul și intră în hibernare completă (luni de autonomie pe baterie).
+- **Vreme Inteligentă (Open-Meteo)**:
   - Dimineața (până la 13:00): Maxima zilei curente.
   - În timpul zilei (13:00 - 21:59): Temperatura și condițiile meteo live.
   - Noaptea (după 22:00): Maxima zilei următoare.
   - 6 pictograme grafice bitmap (Soare, Parțial Noros, Noros, Ploaie, Furtună, Ninsoare).
-- **🎓 Orar Adaptiv (Google Calendar)**:
+- **Orar Adaptiv (Google Calendar)**:
   - După ora 18:00 trece automat la orarul zilei următoare.
   - În weekend sare automat peste sâmbătă și duminică, afișând orarul de luni.
   - Aranjare vizuală inteligentă (centrare verticală și orizontală pentru 1–3 cursuri, listă ordonată pentru 4+ cursuri).
-- **✅ Listă de Task-uri (Google Tasks)**: Preluare directă a task-urilor nefinalizate din lista principală.
-- **🎂 Zile de Naștere & Evenimente (Google Contacts)**: Detectare automată a aniversărilor pe următoarele 7 zile cu etichete prietenoase `(Azi!)` și `(mâine)`.
-- **🔒 Securitate & Bune Practici**: Credențialele Wi-Fi și endpoint-urile Google Apps Script sunt separate în `config.h` și protejate strict prin `.gitignore`.
+- **Listă de Task-uri (Google Tasks)**: Preluare directă a task-urilor nefinalizate din lista principală.
+- **Zile de Naștere & Evenimente (Google Contacts)**: Detectare automată a aniversărilor pe următoarele 7 zile cu etichete prietenoase `(Azi!)` și `(mâine)`.
+- **Securitate & Bune Practici**: Credențialele Wi-Fi și endpoint-urile Google Apps Script sunt separate în `config.h` și protejate strict prin `.gitignore`.
 
 ---
 
-## 🏛️ Arhitectură Sistem
+## Arhitectură Sistem
 
 ```mermaid
 flowchart LR
@@ -40,7 +40,7 @@ flowchart LR
 
 ---
 
-## 📂 Structura Proiectului
+## Structura Proiectului
 
 ```
 epaper/
@@ -65,7 +65,7 @@ epaper/
 
 ---
 
-## 🔌 Hardware & Conexiuni
+## Hardware & Conexiuni
 
 Ecranul E-Paper utilizează o interfață SPI standard. Conexiunile implicite pentru ESP32 sunt:
 
@@ -84,7 +84,7 @@ Pentru detalii complete, consultați [Ghidul Hardware](docs/hardware.md).
 
 ---
 
-## 📦 Biblioteci Arduino Necesare
+## Biblioteci Arduino Necesare
 
 Pentru compilarea firmware-ului sunt necesare următoarele biblioteci din *Arduino Library Manager*:
 - **GxEPD2** (de Jean-Marc Zingg) - Driver pentru e-paper
@@ -93,7 +93,7 @@ Pentru compilarea firmware-ului sunt necesare următoarele biblioteci din *Ardui
 
 ---
 
-## 🚀 Ghid Rapid de Pornire
+## Ghid Rapid de Pornire
 
 ### 1. Configurare Backend (Google Apps Script)
 1. Urmează instrucțiunile din [Backend Setup](backend/google_apps_script/README.md).
@@ -124,13 +124,13 @@ Pentru compilarea firmware-ului sunt necesare următoarele biblioteci din *Ardui
 
 ---
 
-## 🛡️ Securitate & Bune Practici
+## Securitate & Bune Practici
 
 - **Fără secrete în repository**: Fișierul `config.h` este inclus în `.gitignore`. Nu îl adăugați manual cu `git add -f`.
 - **Verificare înainte de commit**: Folosiți `git status` pentru a vă asigura că niciun fișier local de configurare nu este pregătit pentru commit.
 
 ---
 
-## 📄 Licență
+## Licență
 
 Acest proiect este licențiat sub termenii licenței [MIT](LICENSE).

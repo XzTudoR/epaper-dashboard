@@ -8,7 +8,7 @@ Acest script servește drept backend serverless pentru ecranul E-Paper, agregân
 
 ---
 
-## 🚀 Ghid Pas cu Pas pentru Deploiere
+## Ghid Pas cu Pas pentru Deploiere
 
 ### 1. Crearea Proiectului
 1. Deschide [Google Apps Script](https://script.google.com/home).
@@ -28,7 +28,7 @@ Pentru a citi task-urile, trebuie activat serviciul **Tasks**:
 
 ### 4. Deploierea ca Web App
 1. În colțul din dreapta-sus, apasă pe **Deploy** -> **New deployment** (Implementare nouă).
-2. Apasă pe rotița de configurare ⚙️ de lângă *Select type* și alege **Web app**.
+2. Apasă pe rotița de configurare (iconița de setări) de lângă *Select type* și alege **Web app**.
 3. Completează câmpurile:
    - **Description**: `E-Paper Dashboard API v1`
    - **Execute as**: `Me` (adresa ta de Google)
@@ -45,7 +45,7 @@ const char* const API_URL = "https://script.google.com/macros/s/AKfycb.../exec";
 
 ---
 
-## 🧪 Testare Rapidă
+## Testare Rapidă
 
 Poți testa endpoint-ul direct în browser sau rulând comanda `curl`:
 ```bash

@@ -4,7 +4,7 @@ Acest document descrie componentele hardware, conexiunile electrice (pinout) și
 
 ---
 
-## 🔌 Specificații Componente
+## Specificații Componente
 
 1. **Microcontroller**: ESP32 (ESP32-C3 / ESP32-S3 / standard ESP32 DevKit)
    - Conectivitate: Wi-Fi 802.11 b/g/n (2.4 GHz)
@@ -18,7 +18,7 @@ Acest document descrie componentele hardware, conexiunile electrice (pinout) și
 
 ---
 
-## 📌 Tabel de Conexiuni (Pinout SPI)
+## Tabel de Conexiuni (Pinout SPI)
 
 | Pin E-Paper | Semnal | Pin ESP32 (Implicit) | Notă |
 |:---:|:---:|:---:|:---|
@@ -44,7 +44,7 @@ Acest document descrie componentele hardware, conexiunile electrice (pinout) și
 
 ---
 
-## ⚡ Optimizare Consum și Baterie
+## Optimizare Consum și Baterie
 
 Proiectul este proiectat pentru a funcționa săptămâni sau luni pe un acumulator LiPo (3.7V / 18650 sau similar):
 
