@@ -1,0 +1,45 @@
+# ==============================================================================
+# Git Ignore - ESP32 E-Paper Dashboard
+# ==============================================================================
+
+# --- Sensitive Configuration & Credentials ---
+config.h
+secrets.h
+*.local.h
+.env
+.env.*
+*.secret
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- Arduino / PlatformIO / ESP-IDF Build Artifacts ---
+build/
+bin/
+*.bin
+*.elf
+*.hex
+*.o
+*.a
+*.d
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# --- Logs & Crash Dumps ---
+*.log
+core

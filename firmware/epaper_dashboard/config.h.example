@@ -1,0 +1,41 @@
+#pragma once
+
+// ==============================================================================
+// ESP32 E-Paper Dashboard - Configuration Template
+// ==============================================================================
+// INSTRUCTIONS:
+// 1. Copy this file as "config.h" in the same directory:
+//    cp config.h.example config.h
+// 2. Fill in your real credentials below.
+// 3. "config.h" is gitignored and will never be pushed to your repository.
+// ==============================================================================
+
+// --- WiFi Credentials ---
+const char* const WIFI_SSID     = "YOUR_WIFI_SSID";
+const char* const WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+
+// --- Google Apps Script Web App Endpoint ---
+// Deploy your Apps Script as a Web App (Access: Anyone) and paste the URL here:
+const char* const API_URL = "https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec";
+
+// --- E-Paper SPI Pinout (Good Display GDEY042T81 / ESP32) ---
+constexpr int PIN_EPD_CS   = 5;
+constexpr int PIN_EPD_DC   = 4;
+constexpr int PIN_EPD_RST  = 2;
+constexpr int PIN_EPD_BUSY = 15;
+constexpr int PIN_SPI_SCK  = 6;
+constexpr int PIN_SPI_MOSI = 7;
+
+// --- Deep Sleep Timing ---
+// Default: 3 hours in seconds (3 * 3600 = 10800s)
+constexpr uint64_t TIME_TO_SLEEP_SEC = 3ULL * 60ULL * 60ULL;
+constexpr uint64_t US_TO_S_FACTOR    = 1000000ULL;
+
+// --- Timezone and Localization ---
+// POSIX TZ string for Europe/Bucharest (with automatic Daylight Saving Time):
+const char* const NTP_TIMEZONE = "EET-2EEST,M3.5.0/3,M10.5.0/4";
+const char* const NTP_SERVER_1 = "pool.ntp.org";
+const char* const NTP_SERVER_2 = "time.nist.gov";
+
+// --- Watermark / Monogram (Top-Left corner) ---
+const char* const WATERMARK_LABEL = "C(M+T)";
